@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <title>Commands</title>
+</head>
+<body>
+    <h1 id="title">Documentation: Commands</h1>
+    <div id="mySidebar" class="sidebar">
+        <a href="/theory">Theory</a>
+        <a href="/tools">Tools</a>
+        <a href="/commands">Commands</a>
+      </div>
+      
+      <div id="main">
+          <button class="openbtn">☰</button>
+        <div class="row">
+            <div class="column">
+                <div class="examples" id="cdC">
+                    <h2>cd</h2>
+                    <p>Stands for 'change directory' and as the name describes it is used to change the current directory.</p>
+                    <h3>cd &lt;path&gt;</h3>
+                        <p>To navigate through your directories use cd with the path of your destination.
+                            <br>The path is not case sensitive.</p>
+                    <h3>cd ..</h3>
+                        <p>When you have gone in too far or need to move back up a directory use cd ..</p>
+                    <h3>cd/</h3>
+                        <p>Only using / with cd will move you all the way up to the root directory.</p>
+                </div>
+
+                <div class="examples" id="nodeC">
+                    <h2>node</h2>
+                        <p>The node command will try to load module located in the folder you pass, and start whatever is written in "main" section of package.json.</p>
+                    <h3>node &lt;path&gt;/&lt;filename&gt;</h3>
+                        <p>In order to run a node application you prefix with node followed by the path to the file you wish to run, lastly write the filename plus its extension.</p>
+                    <h3>node &lt;filename&gt;</h3>
+                        <p>If your terminal is already on the desired path of the file to be run, the path can be omitted from the command and the filename can be directly used.</p>
+                </div>
+
+                <div class="examples" id="npmC">
+                    <h2>npm</h2>
+                        <p>Using the npm command to install packages is very easy,
+                            in order to install packages into a project a <span>package.json</span> file to handle the dependencies must be present.</p>
+                    <h3>npm install &lt;package_name&gt;</h3>
+                        <p>To install a package you need the exact package name, after it is as simple as writing npm install followed by that package name, 
+                            this will install the package locally in your current standing directory.
+                        </p>
+                    <h3>npm install</h3>
+                        <p>If one or more dependencies have been manually written in package.json simply using npm install
+                            will install all dependencies defined within and it will make sure that it is the newest version.</p>
+                    <h3>npm install &lt;package_name&gt; -g</h3>
+                        <p>Like with previous commands this will also install a package, however where the other installed the packages locally, by using -g, 
+                            this will install the package globally directly on your system for all your other projects to use.
+                            <br>The -g can also be placed before the package name.</p>
+                    <h3>npm i</h3>
+                        <p>npm i, is simply used as a shortend version of npm install and will work in all cases where you would normally use npm install.</p>
+                    <h3>npm run &lt;script_name&gt;</h3>
+                        <p>If you have any declared scripts in your package.json file these can be run be using npm run with the name of the script,
+                            scripts are can be used for quick access to commands and to make use of enviroment variables.
+                    <h3>npm init</h3>
+                        <p>It is possible to initialize npm directly in your project by using npm init this will take you through a guide of several items to fill in, like version, name etc.
+                            <br>When the setup is complete, a package.json will be created with these settings filled into it, making manually creating and filling not needed.</p>
+                    <h3>npm uninstall &lt;package_name&gt; (-g)</h3>
+                        <p>The exact opposite of install, this command will uninstall any package that you have previously installed and remove it from your dependencies.
+                            <br>It is also possible to add -g to uninstall a globally installed package.</p>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="examples" id="lsC">
+                    <h2>ls</h2>
+                        <p>The ls command will show all the files, folders etc which exist on a given path, 
+                            this means that you are capable of getting an overview over all items on a path after using cd, or just in general.</p>
+                </div>
+
+                <div class="examples" id="dirC">
+                    <h2>dir</h2>
+                        <p>When in a Windows command prompt, ls is not a recoqnized as a command, this is because ls is a UNIX based command, here the command dir will accomplish the same task.</p>
+                        <p>The exception here is that Windows Powershell will recoqnize ls as a command.</p>
+                </div>
+
+                <div class="examples" id="nodemonC">
+                    <h2>nodemon</h2>
+                        <p>nodemon will make sure that your app is restarted everytime a change is detected, usefull for development, requires install via npm or to be run via npx.</p>
+                    <h3>nodemon &lt;path&gt;/&lt;filename&gt;</h3>
+                        <p>To run using nodemon use the path to the file you wish to execute and finish with the name of the file plus its extension.</p>
+                    <h3>nodemon &lt;filename&gt;</h3>
+                        <p>As with the node command, if the terminal is already correctly placed, the path can be omitted from the command.</p>
+                    <h3>nodemon.cmd &lt;filename&gt;</h3>
+                        <p>If using Windows Powershell the nodemon command differs slightly and needs the added .cmd to be run, the previous commands are based on UNIX.</p>
+                </div>
+
+                <div class="examples" id="budoC">
+                    <h2>budo</h2>
+                        <p>budo is used for rapid web development and can enable live reload and is very usefull on work-in-progress sites.</p>
+                    <h3>budo &lt;path&gt;/&lt;filename&gt;</h3>
+                        <p>The budo command also needs to be directed through your directories to where your file to be run is located, followed by the filename and its extension.</p>
+                    <h3>budo &lt;filename&gt;</h3>
+                        <p>As before the path is unnecessary if you are located where you have direct access to the files you wish to run.</p>
+                    <h3 style="color: rgb(255, 196, 0);">flags</h3>
+                        <p>budo is often used with various extra features enabled, these are used via what is know as flags. 
+                            <br>A flag is added after the filename and needs to be spaced, The flags can be used simultaneously with space between them,
+                            here we will list the most common used ones.</p>
+                    <h3>--live</h3>
+                        <p>For live refresh and updates as work is being performed, budo will actually not run live-reload without this flag.</p>
+                    <h3>--open</h3>
+                        <p>Will automatically open your browser on the correct address when the project spins up, this address is your machines local ip and port 9966.</p>
+                </div>
+
+                <div class="examples" id="npxC">
+                    <h2>npx</h2>
+                        <p>npx can be used to make a one-time execution of either a node_modules package or from a central cache, intalling packages needed for it to run.</p>
+                    <h3>npx &lt;package_name&gt;</h3>
+                        <p>In order to use npx, add npx infront of the execution of a different package that you wish to use, 
+                            after which you simply follow the execution of said package.
+                </div>
+            </div>
+
+            <div class="columnSticky">
+                <img id="ex1" class="example">
+                <img id="ex2" class="example">
+                <img id="ex3" class="example">
+            </div>
+        </div>
+    </div>
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="script/index.js"></script>
+</body>
+</html>

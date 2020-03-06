@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <title>Theory</title>
+</head>
+<body>
+    <h1 id="title">Documentation: Theory</h1>
+    <div id="mySidebar" class="sidebar">
+        <a href="/theory">Theory</a>
+        <a href="/tools">Tools</a>
+        <a href="/commands">Commands</a>
+      </div>
+      
+      <div id="main">
+          <button class="openbtn">☰</button>
+        <div class="row">
+            <div class="column">
+                <h2>Variable Declaration</h2>
+                    <h3>var</h3>
+                        <p>A variable type which is globally scoped when outside of a function 
+                            and function scoped when inside a function.</p>
+                        <p>var works with hoisting and can therfore be declared after usage. </p>
+                        <p>A var can be redeclared which can result in unpredicted behavior if a redeclaration takes place
+                            in a different scope.</p>
+
+                    <h3>let</h3>
+                        <p>let comes as an improvment over the var declaration and will solve the scoping problems.</p>
+                        <p>is block scoped and only lives within a set of curly braces {}, 
+                            let is allowed to be updated but not redeclared.</p>
+                        <p>The same variable name can therefore only be used several times if they are within different scopes, 
+                            it will otherwise result in a 'SyntaxError.'</p>
+                        <p>Unlike var, let will not work properly with hoising, 
+                            this is because where var is initialized as 'undefined',
+                            let has no initialization, so trying to use it with hoising will result in a 'ReferenceError'.</p>
+
+                    <h3>const</h3>
+                        <p>A variable declaration with const will maintain a constant value, this means a const cannot be updated nor redeclared.</p>
+                        <p>Like with let, const is also block scoped and can only be accessed within the block it was declared.</p>
+                        <p>Because we are unable to update a const, it must always be initialized by the time of declaration</p>
+                        <p>Even though it is impossible to update the direct value of a const, the properties of the objects can be updated.</p>
+                        <p>Hoisting of const work in the same way as let, as a const is also not initialized.</p>
+                    <a href="https://dev.to/sarah_chima/var-let-and-const--whats-the-difference-69e">For more info and examples</a>
+
+                <h2>Strings</h2>
+
+            </div>
+
+            <div class="column">
+                <h2>Loops</h2>
+                    <p>For loops</p>
+
+                <h2>Functions</h2>
+                    <h3>Standard Function</h3>
+                        <p>SF</p>
+                    <h3>Arrow Function</h3>
+                        <p>AF</p>
+
+                <h2>Collection</h2>
+                    <p>Arrays</p>
+            </div>
+            
+            <div class="columnSticky">
+                <img id="ex1" class="example">
+                <img id="ex2" class="example">
+                <img id="ex3" class="example">
+            </div>
+        </div>
+    </div>
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="script/index.js"></script>
+</body>
+</html>
