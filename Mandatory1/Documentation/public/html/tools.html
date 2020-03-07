@@ -19,72 +19,90 @@
           <button class="openbtn">☰</button>
         <div class="row">
             <div class="column">
-                <h2>VS-Code</h2>
-                    <p>Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux. 
-                        <br>It comes with built-in support for JavaScript, TypeScript and Node.js and has a rich ecosystem of extensions for other languages 
-                        (such as C++, C#, Java, Python, PHP, Go) and runtimes (such as .NET and Unity).</p>
+                <div class="examples" id="vscT">
+                    <h2>VS-Code</h2>
+                        <p>Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux. 
+                            <br>It comes with built-in support for JavaScript, TypeScript and Node.js and has a rich ecosystem of extensions for other languages 
+                            (such as C++, C#, Java, Python, PHP, Go) and runtimes (such as .NET and Unity).</p>
                         <p>The way to make use of all these languages is to properly annotate the extensions of the files you create with the language you want to use 
                             (.py for Python, .js for JavaScript etc.)</p>
                         <p>It also comes with a built-in terminal for running the various files directly from the editor, 
                             this terminal supports many different types like Powershell, Bash, zsh and more.</p>
 
-                <h2>npm</h2>
-                    <p>npm stands for Node Package Manager, and as the name suggests it manages packages used for node programs.
-                        It is therefore the Maven or Gradle for node and handles all packages and dependencies for all you node usage.</p>
+                    <h2>npm</h2>
+                        <p>npm stands for Node Package Manager, and as the name suggests it manages packages used for node programs.
+                            It is therefore the Maven or Gradle for node and handles all packages and dependencies for all you node usage.</p>
                         <p>In this sense most, if not all expansions to your node program is dependent on npm and making it 'The world’s largest software registry' according to their own website.</p>
                         <p>Using npm is completly free and so is creating and uploading packages to npm's registry making sharing your accomplishments has never been better and easier.</p>
                         <p>On a seperate note it is possible to send suggestions to the npm team of what you believe npm stands for, and that might just make it on their website.</p>
+                    </div>
 
-                <h2>Budo</h2>
-                    <p>Rapid browser prototyping</p>
+                <div class="examples" id="budoT">
+                    <h2>Budo</h2>
+                        <p>Rapid browser prototyping</p>
+                </div>
 
+                <div class="examples" id="nodemonT">
                 <h2>Nodemon</h2>
                     <p>Nodemon can be explained as a 'more sophisticated' version of executing a node file and in general of the node command, 
                         though nodemon is a third party installed module.</p>
                     <p>For installation see the detailed guide on the npm nodemon pacakge site: 
                         <a href="https://www.npmjs.com/package/nodemon">nodemon package</a> (spoiler: it requires using npm install)</p>
+                </div>
 
-                <h2>Body-Parser</h2>
+                <div class="examples" id="bodyT">
+                    <h2>Body-Parser</h2>
+                </div>
             </div>
 
             <div class="column">
-                <h2>Node.Js</h2>
-                    <p>Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. 
-                        <br>As an asynchronous event-driven JavaScript runtime, Node.js is designed to build scalable network applications.</p>
+                <div class="examples" id="nodeT">
+                    <h2>Node.Js</h2>
+                        <p>Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. 
+                            <br>As an asynchronous event-driven JavaScript runtime, Node.js is designed to build scalable network applications.</p>
+                </div>
 
-                <h2>Express</h2>
-                    <p>Express is a minimal and flexible Node.js web application framework that provides a robust set of features to develop web and mobile applications. 
-                        It facilitates the rapid development of Node based Web applications.</p>
-                    <p>The overall Express framework is focused on being as small as possible so to not clutter and require big downloads on every system that needs to take advantage of it.</p>
-                    <p>As quoting the developers of Express: 
-                        "The Express philosophy is to provide small, robust tooling for HTTP servers, making it a great solution for single page applications, web sites, hybrids, or public HTTP APIs."</p>
-                    <h3>How to use</h3>
-                        <p>In order to use Express it must first be installed via npm, this can be done by either a local install to your package.json or a global install.
-                        <br>After installation Express needs to be imported in your file running the server, which is by convention normally called 'app.js', 
-                        then instantiated to your variable which will then handle all server work.</p>
-                        <p>When all set and done your server variable, often just called 'app' can easily handle listening and requests, like GET, POST and so on, by functions of the same names.</p>
+                <div class="examples" id="expressT">
+                    <h2>Express</h2>
+                        <p>Express is a minimal and flexible Node.js web application framework that provides a robust set of features to develop web and mobile applications. 
+                            It facilitates the rapid development of Node based Web applications.</p>
+                        <p>The overall Express framework is focused on being as small as possible so to not clutter and require big downloads on every system that needs to take advantage of it.</p>
+                        <p>As quoting the developers of Express: 
+                            "The Express philosophy is to provide small, robust tooling for HTTP servers, making it a great solution for single page applications, web sites, hybrids, or public HTTP APIs."</p>
+                        <h3>How to use</h3>
+                            <p>In order to use Express it must first be installed via npm, this can be done by either a local install to your package.json or a global install.
+                            <br>After installation Express needs to be imported in your file running the server, which is by convention normally called 'app.js', 
+                            then instantiated to your variable which will then handle all server work.</p>
+                            <p>When all set and done your server variable, often just called 'app' can easily handle listening and requests, like GET, POST and so on, by functions of the same names.</p>
+                </div>
 
-                <h2>npx</h2>
-                    <p>npx is a tool intended to help round out the experience of using packages from the npm registry 
-                        the same way npm makes it super easy to install and manage dependencies hosted on the registry, 
-                        npx makes it easy to use CLI tools and other executables hosted on the registry</p>
-                    <p>With this npx is used for one-time execution of packages either found in node_modules 
-                        or being able to dynamically install whatever it needs to run a chosen package when executed, 
-                        meaning you will always get results regardless of already installed packages.</p>
+                <div class="examples" id="npxT">
+                    <h2>npx</h2>
+                        <p>npx is a tool intended to help round out the experience of using packages from the npm registry 
+                            the same way npm makes it super easy to install and manage dependencies hosted on the registry, 
+                            npx makes it easy to use CLI tools and other executables hosted on the registry</p>
+                        <p>With this npx is used for one-time execution of packages either found in node_modules 
+                            or being able to dynamically install whatever it needs to run a chosen package when executed, 
+                            meaning you will always get results regardless of already installed packages.</p>
+                </div>
 
-                <h2>jQuery</h2>
-                    <p>Animation and calc</p>
+                <div class="examples" id="jqueryT">
+                    <h2>jQuery</h2>
+                        <p>Animation and calc</p>
+                </div>
 
-                <h2>Scripts</h2>
-                    <p>Scripts are used to make executing various long commands and smaller programs in easy ways, 
-                        enviroment variables can also be added to these scripts solidifying various parameters in functions that need to be different based on the script run.
-                        This could for instance be that you wish to run your production server on port 80 and development server on port 3000, 
-                        and making a script for each makes using and changing between them easy.</p>
-                    <p>A problem with enviroment variables is that based on operating system they will be defined differently and this might make them ineffective with a user on a different OS than you.</p>
-                    <h3>Cross-Env</h3>
-                    <p>A way to fix the previous mentioned problem is to install the 'cross-env' package via npm.
-                        <br>This means that it will be possible to add 'cross-env' before the variable which will make it work with any OS being used.
-                    </p>
+                <div class="examples" id="scriptsT">
+                    <h2>Scripts</h2>
+                        <p>Scripts are used to make executing various long commands and smaller programs in easy ways, 
+                            enviroment variables can also be added to these scripts solidifying various parameters in functions that need to be different based on the script run.
+                            This could for instance be that you wish to run your production server on port 80 and development server on port 3000, 
+                            and making a script for each makes using and changing between them easy.</p>
+                        <p>A problem with enviroment variables is that based on operating system they will be defined differently and this might make them ineffective with a user on a different OS than you.</p>
+                        <h3>Cross-Env</h3>
+                        <p>A way to fix the previous mentioned problem is to install the 'cross-env' package via npm.
+                            <br>This means that it will be possible to add 'cross-env' before the variable which will make it work with any OS being used.
+                        </p>
+                </div>
             </div>
             
             <div class="columnSticky">
