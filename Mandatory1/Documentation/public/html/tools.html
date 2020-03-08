@@ -44,7 +44,11 @@
 
                 <div class="examples" id="budoT">
                     <h2>Budo</h2>
-
+                        <p>Budo is a node package focused on active development on websites by allowing live reload of the page being worked on, 
+                            this makes it optimal for rapid prototyping, budo uses browserify for bunding.</p>
+                        <p>When run budo will start a server with the default 'index.js', this server will be run on localhost with port 9966 as standard,
+                            meaning you will have to navigate to this URL to view the development.</p>
+                        <p>Finally anything after '--' will be passed to browserify which can for instance open the URL in your browser on startup.</p>
                         <a href="https://www.npmjs.com/package/budo">budo Package</a>
                 </div>
 
@@ -52,6 +56,12 @@
                 <h2>Nodemon</h2>
                     <p>Nodemon can be explained as a 'more sophisticated' version of executing a node file and in general of the node command, 
                         though nodemon is a third party installed module.</p>
+                    <p>In short nodemon is a tool that helps with development of node applications by checking for 
+                        active changes happening in your code and restarting your server everytime such a change is detected.</p>
+                    <p>nodemon only requires to be installed and does not interfere with how you write your code, 
+                        you therefore do not need to take any special precautions when using nodemon.
+                        <br>In general the only change you need to make is using the keyword 'nodemon' in place of 'node' when starting your server 
+                        and the rest will be taking care of.</p>
                         <a href="https://www.npmjs.com/package/nodemon">nodemon package</a>
                 </div>
 
