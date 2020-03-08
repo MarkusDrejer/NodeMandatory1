@@ -15,7 +15,7 @@
   }
 
   .columnSticky {
-    float: left;
+    float: right;
     width: 33.33%;
     position: -webkit-sticky;
     position: sticky;
@@ -24,8 +24,8 @@
 
   .columnSticky .example {
     max-width: 88%;
-    height: auto;
-    padding-left: 2em;
+    max-height: auto;
+    margin-left: 2.5em;
     margin-bottom: 1em;
   }
 
@@ -46,8 +46,21 @@
 
   #main p {
     margin-top: -0.3em;
-    width: 88%;
+    width: 90%;
     color: lightgray;
+  }
+
+  .row a:link, a:visited {
+    background-color: gray;
+    color: white;
+    padding: 0.2em 0.4em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .row a:hover, a:active {
+    background-color: darkblue;
   }
   
   .row:after {
