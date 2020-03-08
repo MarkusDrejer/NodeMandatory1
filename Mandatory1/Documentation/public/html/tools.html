@@ -77,6 +77,19 @@
                             Though manual install via npm is still available.</p>
                         <a href="https://www.npmjs.com/package/body-parser">Body-Parser Package</a>
                 </div>
+
+                <div class="examples" id="scriptsT">
+                    <h2>Scripts</h2>
+                        <p>Scripts are used to make executing various long commands and smaller programs in easy ways, 
+                            enviroment variables can also be added to these scripts solidifying various parameters in functions that need to be different based on the script run.
+                            This could for instance be that you wish to run your production server on port 80 and development server on port 3000, 
+                            and making a script for each makes using and changing between them easy.</p>
+                        <p>A problem with enviroment variables is that based on operating system they will be defined differently and this might make them ineffective with a user on a different OS than you.</p>
+                        <h3>Cross-Env</h3>
+                        <p>A way to fix the previous mentioned problem is to install the 'cross-env' package via npm.
+                            <br>This means that it will be possible to add 'cross-env' before the variable which will make it work with any OS being used.</p>
+                        <a href="https://www.npmjs.com/package/cross-env">Cross-Env Package</a>
+                </div>
             </div>
 
             <div class="column">
@@ -97,7 +110,7 @@
                         <p>The overall Express framework is focused on being as small as possible so to not clutter and require big downloads on every system that needs to take advantage of it.</p>
                         <p>As quoting the developers of Express: 
                             "The Express philosophy is to provide small, robust tooling for HTTP servers, making it a great solution for single page applications, web sites, hybrids, or public HTTP APIs."</p>
-                        <h3>How to use</h3>
+                        <h3>How-To</h3>
                             <p>In order to use Express it must first be installed via npm, this can be done by either a local install to your package.json or a global install.
                             <br>After installation Express needs to be imported in your file running the server, which is by convention normally called 'app.js', 
                             then instantiated to your variable which will then handle all server work.</p>
@@ -120,21 +133,21 @@
 
                 <div class="examples" id="jqueryT">
                     <h2>jQuery</h2>
-
-                    <a href="https://developers.google.com/speed/libraries#jquery">Google jQuery API</a>
-                </div>
-
-                <div class="examples" id="scriptsT">
-                    <h2>Scripts</h2>
-                        <p>Scripts are used to make executing various long commands and smaller programs in easy ways, 
-                            enviroment variables can also be added to these scripts solidifying various parameters in functions that need to be different based on the script run.
-                            This could for instance be that you wish to run your production server on port 80 and development server on port 3000, 
-                            and making a script for each makes using and changing between them easy.</p>
-                        <p>A problem with enviroment variables is that based on operating system they will be defined differently and this might make them ineffective with a user on a different OS than you.</p>
-                        <h3>Cross-Env</h3>
-                        <p>A way to fix the previous mentioned problem is to install the 'cross-env' package via npm.
-                            <br>This means that it will be possible to add 'cross-env' before the variable which will make it work with any OS being used.</p>
-                        <a href="https://www.npmjs.com/package/cross-env">Cross-Env Package</a>
+                        <p>jQuery is a lightweight, "write less, do more", JavaScript library.
+                            The purpose of jQuery is to make it much easier to use JavaScript on your website.</p>
+                        <p>jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them into methods that you can call with a single line of code.
+                            jQuery also simplifies a lot of the complicated things from JavaScript, like AJAX calls and DOM manipulation.</p>
+                            
+                        <h3>How-To</h3>
+                            <p>In order to use jQuery you start in a javascript file which needs to be "linked" to your html file(s) via a script tag.
+                                you will also need to linke the jQuery library from Google, which can be found in the link below.</p>
+                            <p>Since jQuery is a library of Javascript it can make use of the same functionality and functions
+                                jQuery is also written in almost the exact same way as plain Javascript, however when writing jQuery always annotate with '$' when starting a statement.
+                                <br>Follow the '$' with the html class, id or tag to be altered or make use of various commands like .get for other functionality.</p>
+                            <p>It is possible to directly alter the css of your html via jQuery, as well as impose functions like clicking which will in turn alter parts of the html after the click, 
+                                this is one of the main functionalities of using jQuery and Javascript on webpages.</p>
+                            <p>It is also possible to declare longer functions and helper functions in jQuery which can in turn be used to alter the html more easily.</p>
+                        <a href="https://developers.google.com/speed/libraries#jquery">Google jQuery API</a>
                 </div>
             </div>
             
