@@ -58,7 +58,7 @@
                             and if you know you need to use double quotes as part of the text you can pick one of the other options for your String, 
                             as to not interfere with the declaration of the String itself.</p>
                         <p>Backticks also has a special feature as it supports direct insertion of variables into the String by writing ${&lt;variable&gt;},
-                            this is not supported by double or single quotes, which both needs to use String concatenation.</P>
+                            this is not supported by double or single quotes.</P>
                         <p>String concatenation works in two ways in Javascript, either by applying the '+' operator or by using ',' between the two.
                             <br>Using '+' can lead to problems as it will completly disregard types and turn the entire thing into a String, 
                             whereas using ',' will keep the types, usually making it the better choice.</p>
@@ -76,14 +76,17 @@
                             this makes JSON optimal since its easily readable by both humans and machines and can contain vast amounts of data.</p>
                 </div>
 
-                <div class="examples" id="depTH">
-                    <h2>Dependencies</h2>
-                        <p>All dependencies of a node project is handled either through the local package.json file or by globally installed packages.
-                            <br>This means that all newly created project will have to re-install dependencies and packages (like Express) if they aren't already available on a global scope.</p>
-                        <h3>package.json</h3>
-                        <p>As said the local dependencies are managed via the projects package.json file, however this file does not come with newly made node projects,
-                            instead it is important that you yourself create this file and make it a valid JSON file before starting to manage and trying to install dependencies.</p>
-                        <p>This file is therefore one of the most important things to remember to add, or get by running the npm init command which will create the file after setup.</p>
+                <div class="examples" id="reqTH">
+                    <h2>Requests</h2>
+                        <p>As part of the build of a REST API we have a set of typically/standarly used HTTP methods, 
+                            that cover the bases of the data we want to be able to get and manipulate.</p>
+                        <p>GET: the GET request is the one which a user has direct access to as it happens via the URL-field in their browser, 
+                            this request is used to get data out of the API and return it to the user in a JSON format.</p>
+                        <p>POST: this is used to create new instances of data, like a new user by means of the request body, it is also usually used on login.</p>
+                        <p>PUT: is used when updating an already existing item in the data, like updating the price of a product on a sales site.</p>
+                        <p>DELETE: will be used when deleting an existing item.</p>
+                        <p>All of these different request types can be used on a collection basis or singular basis, 
+                            for instance you can GET all users or use an id to only GET one specfic user.</p>
                 </div>
             </div>
 
@@ -138,17 +141,14 @@
                             <br>require is also available on a global scope and does not need to be required by itself.</p>
                 </div>
 
-                <div class="examples" id="reqTH">
-                    <h2>Requests</h2>
-                        <p>As part of the build of a REST API we have a set of typically/standarly used HTTP methods, 
-                            that cover the bases of the data we want to be able to get and manipulate.</p>
-                        <p>GET: the GET request is the one which a user has direct access to as it happens via the URL-field in their browser, 
-                            this request is used to get data out of the API and return it to the user in a JSON format.</p>
-                        <p>POST: this is used to create new instances of data, like a new user by means of the request body, it is also usually used on login.</p>
-                        <p>PUT: is used when updating an already existing item in the data, like updating the price of a product on a sales site.</p>
-                        <p>DELETE: will be used when deleting an existing item.</p>
-                        <p>All of these different request types can be used on a collection basis or singular basis, 
-                            for instance you can GET all users or use an id to only GET one specfic user.</p>
+                <div class="examples" id="depTH">
+                    <h2>Dependencies</h2>
+                        <p>All dependencies of a node project is handled either through the local package.json file or by globally installed packages.
+                            <br>This means that all newly created project will have to re-install dependencies and packages (like Express) if they aren't already available on a global scope.</p>
+                        <h3>package.json</h3>
+                        <p>As said the local dependencies are managed via the projects package.json file, however this file does not come with newly made node projects,
+                            instead it is important that you yourself create this file and make it a valid JSON file before starting to manage and trying to install dependencies.</p>
+                        <p>This file is therefore one of the most important things to remember to add, or get by running the npm init command which will create the file after setup.</p>
                 </div>
             </div>
             
