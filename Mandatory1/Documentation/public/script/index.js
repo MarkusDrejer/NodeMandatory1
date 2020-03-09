@@ -24,8 +24,8 @@ $(document).ready(() => {
 
     //Maybe use for better image injection
     /*$("#testing").mouseenter(() => {
-        $(event.currentTarget).append('<img class="hello" src="/img/bodyT1.png">');
-        $(event.currentTarget).append('<img class="hello" src="/img/bodyT2.png">');
+        $(".columnSticky").append('<img class="example" src="/img/bodyT1.png">');
+        $(".columnSticky").append('<img class="example" src="/img/bodyT2.png">');
 
     }).mouseout(() => {
         $(".hello").remove();
