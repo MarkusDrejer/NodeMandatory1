@@ -22,6 +22,13 @@ $(document).ready(() => {
         $(event.currentTarget).text("☰");
     });
 
+    //Maybe use for better image injection
+    /*$("#testing").mouseenter(() => {
+        $(event.currentTarget).append('<img class="hello" src="/img/bodyT1.png">');
+    }).mouseout(() => {
+        $(".hello").remove();
+    });*/
+
     $(".examples").mouseenter(() => {
         let currentTagId = $(event.currentTarget).attr("id");
         let count = 1;
