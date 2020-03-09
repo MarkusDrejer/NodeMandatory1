@@ -90,16 +90,33 @@
             <div class="column">
                 <div class="examples" id="loopsTH">
                     <h2>Loops</h2>
-                        <p>Normal foor loops</p>
-                        <p>Enhanced for loops</p>
+                        <p>In Javascript there a couple of different loop types to work with, as with many languages While and For are the two most common ones.</p>
+                        <p>The While loop is pretty uninteresting and works the same way here as in Java, with the While keyword followed by the condition.</p>
+                        <p>For loops are a bit more interesting, here we deal with a more standard style as found in Java with a variable, condition and increment.
+                            <br>But we can also make use of so called 'Enhanced' For loops which in a shorter manner can get either index or elements out of an array</p>
+                        <p>for x in array: is an enhanced version of picking out the elements of the array and storing them in the variable x.</p>
+                        <p>for x of array: will instead run through the index of the array and store it in x.</p>
+                        <p>Thirdly it is possible to use a special foreach loop by writing: array.foreach(function), 
+                            which will run through every element of the array and run the given function on each element.</p>
                 </div>
 
                 <div class="examples" id="funcTH">
                     <h2>Functions</h2>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions">For images</a>
+                        <p>Functions are one of the fundamental building blocks in JavaScript. 
+                            <br>A function is a JavaScript procedure, a set of statements that performs a task or calculates a value. 
+                            <br>To use a function, you must define it somewhere in the scope from which you wish to call it.</p>
                         <h3>Standard Function</h3>
-                            <p>Older version, has problems with this keyword</p>
+                            <p>The standard function in Javascript consists of the function keyword followed by the name, parameters and the actual code to be executed.</p>
+                            <p>However this way of defining functions is a bit old and comes with some problems.
+                                <br>The primary problem here is when using the 'this' keyword which is not closed to the function and can instead refer to higher scoped items, 
+                                not just items present in the function itself, meaning you might get a wrong reference when using 'this'.</p>
                         <h3>Arrow Function</h3>
-                            <p>Easier to write, fixes problems with this keyword = event.currenttarget</p>
+                            <p>A newer way of writing functions is by using what is called Arrow functions, 
+                                this is basically a lambda expression of a function as it has no name and is as such anonomys.</p>
+                            <p>Arrow functions start with the paranthesis with parameters followed by the '=>' arrow part and then the code to be executed.</p>
+                            <p>Arrow functions are primarily easier to write and also fix the previous 'this' problem with the standard functions, 
+                                because 'this' keyword is only valid within the function itself keeping it from creating problems.</p>
                 </div>
 
                 <div class="examples" id="collTH">
