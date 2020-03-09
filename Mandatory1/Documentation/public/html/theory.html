@@ -49,7 +49,19 @@
 
                 <div class="examples" id="stringTH">
                     <h2>Strings</h2>
-
+                        <p>In Javascript we have several valid ways of writing Strings, these include:
+                            <br>Double quotes = " "
+                            <br>Single quotes = ' '
+                            <br>Backticks = ` `</p>
+                        <p>The reasoning for all these different ways is primarily 
+                            so that a text which might include quoting can still be done in a proper fashion
+                            and if you know you need to use double quotes as part of the text you can pick one of the other options for your String, 
+                            as to not interfere with the declaration of the String itself.</p>
+                        <p>Backticks also has a special feature as it supports direct insertion of variables into the String by writing ${&lt;variable&gt;},
+                            this is not supported by double or single quotes, which both needs to use String concatenation.</P>
+                        <p>String concatenation works in two ways in Javascript, either by applying the '+' operator or by using ',' between the two.
+                            <br>Using '+' can lead to problems as it will completly disregard types and turn the entire thing into a String, 
+                            whereas using ',' will keep the types, usually making it the better choice.</p>
                 </div>
 
                 <div class="examples" id="jsonTH">

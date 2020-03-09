@@ -17,6 +17,7 @@
       
       <div id="main">
           <button class="openbtn">☰</button>
+          <h3 style="color: red; margin-top: 1em;">For usage of many of these tools, please navigate to the <a href="/commands">commands</a> page.</h3>
         <div class="row">
             <div class="column">
                 <div class="examples" id="vscT">
@@ -74,7 +75,7 @@
                         <p>Since the input is based on whatever the user decides to send through it is impossible to know which format you will recieve, 
                             so for instance trying to use .toString can fail in multiple ways, as there is no guarenteeing that the input supports a toString function.</p>
                         <p>Since 2017 the body-parser package has been directly included in Express, meaning there is no need for further install if you already make use of Express.
-                            Though manual install via npm is still available.</p>
+                            <br>Though manual install via npm is still available.</p>
                         <a href="https://www.npmjs.com/package/body-parser">Body-Parser Package</a>
                 </div>
 
@@ -115,7 +116,7 @@
                             <br>After installation Express needs to be imported in your file running the server, which is by convention normally called 'app.js', 
                             then instantiated to your variable which will then handle all server work.</p>
                             <p>When all set and done your server variable, often just called 'app' can easily handle listening and requests, like GET, POST and so on, by functions of the same names.</p>
-                            <p>One important mention, in order to use resourcers like css files, images etc with Express, it us necessary to make Express know which static folders it needs to be able to use,
+                            <p>In order to use resourcers like css files, images etc with Express, it us necessary to make Express know which static folders it needs to be able to use,
                                 this is done by using .use on your application with the name of the folder.</p>
                             <a href="https://www.npmjs.com/package/express">Express Package</a>
                 </div>
