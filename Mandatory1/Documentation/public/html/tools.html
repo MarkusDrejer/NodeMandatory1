@@ -29,7 +29,7 @@
                             (.py for Python, .js for JavaScript etc.)</p>
                         <p>It also comes with a built-in terminal for running the various files directly from the editor, 
                             this terminal supports many different types like Powershell, Bash, zsh and more.</p>
-                        <a href="https://code.visualstudio.com/">Visual Studio Code</a>
+                    <a href="https://code.visualstudio.com/">Visual Studio Code</a>
                 </div>
 
                 <div class="examples" id="npmT">
@@ -40,30 +40,21 @@
                         <p>The npm dependencies are loaded and declared within the package.json file when the packages are installed locally, otherwise they will be located directly in a folder on your system</p>
                         <p>Using npm is completly free and so is creating and uploading packages to npm's registry making sharing your accomplishments has never been better and easier.</p>
                         <p>On a seperate note it is possible to send suggestions to the npm team of what you believe npm stands for, and that might just make it on their website.</p>
-                        <a href="https://www.npmjs.com/">npm</a>
+                    <a href="https://www.npmjs.com/">npm</a>
                 </div>
 
-                <div class="examples" id="budoT">
-                    <h2>Budo</h2>
-                        <p>Budo is a node package focused on active development on websites by allowing live reload of the page being worked on, 
-                            this makes it optimal for rapid prototyping, budo uses browserify for bunding.</p>
-                        <p>When run budo will start a server with the default 'index.js', this server will be run on localhost with port 9966 as standard,
-                            meaning you will have to navigate to this URL to view the development.</p>
-                        <p>Finally anything after '--' will be passed to browserify which can for instance open the URL in your browser on startup.</p>
-                        <a href="https://www.npmjs.com/package/budo">budo Package</a>
-                </div>
 
                 <div class="examples" id="nodemonT">
-                <h2>Nodemon</h2>
-                    <p>Nodemon can be explained as a 'more sophisticated' version of executing a node file and in general of the node command, 
-                        though nodemon is a third party installed module.</p>
-                    <p>In short nodemon is a tool that helps with development of node applications by checking for 
-                        active changes happening in your code and restarting your server everytime such a change is detected.</p>
-                    <p>nodemon only requires to be installed and does not interfere with how you write your code, 
-                        you therefore do not need to take any special precautions when using nodemon.
-                        <br>In general the only change you need to make is using the keyword 'nodemon' in place of 'node' when starting your server 
-                        and the rest will be taking care of.</p>
-                        <a href="https://www.npmjs.com/package/nodemon">nodemon package</a>
+                    <h2>Nodemon</h2>
+                        <p>Nodemon can be explained as a 'more sophisticated' version of executing a node file and in general of the node command, 
+                            though nodemon is a third party installed module.</p>
+                        <p>In short nodemon is a tool that helps with development of node applications by checking for 
+                            active changes happening in your code and restarting your server everytime such a change is detected.</p>
+                        <p>nodemon only requires to be installed and does not interfere with how you write your code, 
+                            you therefore do not need to take any special precautions when using nodemon.
+                            <br>In general the only change you need to make is using the keyword 'nodemon' in place of 'node' when starting your server 
+                            and the rest will be taking care of.</p>
+                    <a href="https://www.npmjs.com/package/nodemon">nodemon package</a>
                 </div>
 
                 <div class="examples" id="bodyT">
@@ -76,60 +67,7 @@
                             so for instance trying to use .toString can fail in multiple ways, as there is no guarenteeing that the input supports a toString function.</p>
                         <p>Since 2017 the body-parser package has been directly included in Express, meaning there is no need for further install if you already make use of Express.
                             <br>Though manual install via npm is still available.</p>
-                        <a href="https://www.npmjs.com/package/body-parser">Body-Parser Package</a>
-                </div>
-
-                <div class="examples" id="scriptsT">
-                    <h2>Scripts</h2>
-                        <p>Scripts are used to make executing various long commands and smaller programs in easy ways, 
-                            enviroment variables can also be added to these scripts solidifying various parameters in functions that need to be different based on the script run.
-                            This could for instance be that you wish to run your production server on port 80 and development server on port 3000, 
-                            and making a script for each makes using and changing between them easy.</p>
-                        <p>A problem with enviroment variables is that based on operating system they will be defined differently and this might make them ineffective with a user on a different OS than you.</p>
-                        <h3>Cross-Env</h3>
-                        <p>A way to fix the previous mentioned problem is to install the 'cross-env' package via npm.
-                            <br>This means that it will be possible to add 'cross-env' before the variable which will make it work with any OS being used.</p>
-                        <a href="https://www.npmjs.com/package/cross-env">Cross-Env Package</a>
-                </div>
-            </div>
-
-            <div class="column">
-                <div class="examples" id="nodeT">
-                    <h2>Node.Js</h2>
-                        <p>Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. 
-                            <br>As an asynchronous event-driven JavaScript runtime, Node.js is designed to build scalable network applications.</p>
-                        <p>One of the brilliant traits of Node.Js is its representation of a 'Javascript everywhere' paradigm, 
-                            unifying server and client side under one language, significantly easing the task of building a fullstack web application.</p>
-                            <p>Node.Js is open source and completly free to use, making it a very lucrative option for modern large applications.</p>
-                        <a href="https://nodejs.org/en/">Node.Js</a>
-                </div>
-
-                <div class="examples" id="expressT">
-                    <h2>Express</h2>
-                        <p>Express is a minimal and flexible Node.js web application framework that provides a robust set of features to develop web and mobile applications. 
-                            It facilitates the rapid development of Node based Web applications.</p>
-                        <p>The overall Express framework is focused on being as small as possible so to not clutter and require big downloads on every system that needs to take advantage of it.</p>
-                        <p>As quoting the developers of Express: 
-                            "The Express philosophy is to provide small, robust tooling for HTTP servers, making it a great solution for single page applications, web sites, hybrids, or public HTTP APIs."</p>
-                        <h3>How-To</h3>
-                            <p>In order to use Express it must first be installed via npm, this can be done by either a local install to your package.json or a global install.
-                            <br>After installation Express needs to be imported in your file running the server, which is by convention normally called 'app.js', 
-                            then instantiated to your variable which will then handle all server work.</p>
-                            <p>When all set and done your server variable, often just called 'app' can easily handle listening and requests, like GET, POST and so on, by functions of the same names.</p>
-                            <p>In order to use resourcers like css files, images etc with Express, it us necessary to make Express know which static folders it needs to be able to use,
-                                this is done by using .use on your application with the name of the folder.</p>
-                            <a href="https://www.npmjs.com/package/express">Express Package</a>
-                </div>
-
-                <div class="examples" id="npxT">
-                    <h2>npx</h2>
-                        <p>npx is a tool intended to help round out the experience of using packages from the npm registry 
-                            the same way npm makes it super easy to install and manage dependencies hosted on the registry, 
-                            npx makes it easy to use CLI tools and other executables hosted on the registry</p>
-                        <p>With this npx is used for one-time execution of packages either found in node_modules 
-                            or being able to dynamically install whatever it needs to run a chosen package when executed, 
-                            meaning you will always get results regardless of already installed packages.</p>
-                        <a href="https://www.npmjs.com/package/npx">npx Package</a>
+                    <a href="https://www.npmjs.com/package/body-parser">Body-Parser Package</a>
                 </div>
 
                 <div class="examples" id="jqueryT">
@@ -148,7 +86,70 @@
                             <p>It is possible to directly alter the css of your html via jQuery, as well as impose functions like clicking which will in turn alter parts of the html after the click, 
                                 this is one of the main functionalities of using jQuery and Javascript on webpages.</p>
                             <p>It is also possible to declare longer functions and helper functions in jQuery which can in turn be used to alter the html more easily.</p>
-                        <a href="https://developers.google.com/speed/libraries#jquery">Google jQuery API</a>
+                    <a href="https://developers.google.com/speed/libraries#jquery">Google jQuery API</a>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="examples" id="nodeT">
+                    <h2>Node.Js</h2>
+                        <p>Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. 
+                            <br>As an asynchronous event-driven JavaScript runtime, Node.js is designed to build scalable network applications.</p>
+                        <p>One of the brilliant traits of Node.Js is its representation of a 'Javascript everywhere' paradigm, 
+                            unifying server and client side under one language, significantly easing the task of building a fullstack web application.</p>
+                        <p>Node.Js is open source and completly free to use, making it a very lucrative option for modern large applications.</p>
+                    <a href="https://nodejs.org/en/">Node.Js</a>
+                </div>
+
+                <div class="examples" id="expressT">
+                    <h2>Express</h2>
+                        <p>Express is a minimal and flexible Node.js web application framework that provides a robust set of features to develop web and mobile applications. 
+                            It facilitates the rapid development of Node based Web applications.</p>
+                        <p>The overall Express framework is focused on being as small as possible so to not clutter and require big downloads on every system that needs to take advantage of it.</p>
+                        <p>As quoting the developers of Express: 
+                            "The Express philosophy is to provide small, robust tooling for HTTP servers, making it a great solution for single page applications, web sites, hybrids, or public HTTP APIs."</p>
+                        <h3>How-To</h3>
+                            <p>In order to use Express it must first be installed via npm, this can be done by either a local install to your package.json or a global install.
+                            <br>After installation Express needs to be imported in your file running the server, which is by convention normally called 'app.js', 
+                            then instantiated to your variable which will then handle all server work.</p>
+                            <p>When all set and done your server variable, often just called 'app' can easily handle listening and requests, like GET, POST and so on, by functions of the same names.</p>
+                            <p>In order to use resourcers like css files, images etc with Express, it us necessary to make Express know which static folders it needs to be able to use,
+                                this is done by using .use on your application with the name of the folder.</p>
+                    <a href="https://www.npmjs.com/package/express">Express Package</a>
+                </div>
+
+                <div class="examples" id="budoT">
+                    <h2>Budo</h2>
+                        <p>Budo is a node package focused on active development on websites by allowing live reload of the page being worked on, 
+                            this makes it optimal for rapid prototyping, budo uses browserify for bunding.</p>
+                        <p>When run budo will start a server with the default 'index.js', this server will be run on localhost with port 9966 as standard,
+                            meaning you will have to navigate to this URL to view the development.</p>
+                        <p>Finally anything after '--' will be passed to browserify which can for instance open the URL in your browser on startup.</p>
+                    <a href="https://www.npmjs.com/package/budo">budo Package</a>
+                </div>
+
+                <div class="examples" id="npxT">
+                    <h2>npx</h2>
+                        <p>npx is a tool intended to help round out the experience of using packages from the npm registry 
+                            the same way npm makes it super easy to install and manage dependencies hosted on the registry, 
+                            npx makes it easy to use CLI tools and other executables hosted on the registry</p>
+                        <p>With this npx is used for one-time execution of packages either found in node_modules 
+                            or being able to dynamically install whatever it needs to run a chosen package when executed, 
+                            meaning you will always get results regardless of already installed packages.</p>
+                    <a href="https://www.npmjs.com/package/npx">npx Package</a>
+                </div>
+
+                <div class="examples" id="scriptsT">
+                    <h2>Scripts</h2>
+                        <p>Scripts are used to make executing various long commands and smaller programs in easy ways, 
+                            enviroment variables can also be added to these scripts solidifying various parameters in functions that need to be different based on the script run.
+                            This could for instance be that you wish to run your production server on port 80 and development server on port 3000, 
+                            and making a script for each makes using and changing between them easy.</p>
+                        <p>A problem with enviroment variables is that based on operating system they will be defined differently and this might make them ineffective with a user on a different OS than you.</p>
+                        <h3>Cross-Env</h3>
+                        <p>A way to fix the previous mentioned problem is to install the 'cross-env' package via npm.
+                            <br>This means that it will be possible to add 'cross-env' before the variable which will make it work with any OS being used.</p>
+                    <a href="https://www.npmjs.com/package/cross-env">Cross-Env Package</a>
                 </div>
             </div>
             
