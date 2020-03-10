@@ -22,16 +22,6 @@ $(document).ready(() => {
         $(event.currentTarget).text("☰");
     });
 
-    //Maybe use for better image injection
-    /*$("#testing").mouseenter(() => {
-        $(".columnSticky").append('<img class="example" src="/img/bodyT1.png">');
-        $(".columnSticky").append('<img class="example" src="/img/bodyT2.png">');
-
-    }).mouseout(() => {
-        $(".hello").remove();
-
-    });*/
-
     $(".examples").mouseenter(() => {
         let currentTagId = $(event.currentTarget).attr("id");
         let count = 1;
