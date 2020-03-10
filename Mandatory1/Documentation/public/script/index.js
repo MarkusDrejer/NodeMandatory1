@@ -49,7 +49,6 @@ $(document).ready(() => {
         }
         for(count; count <= 3; count += 1) {
             $("#ex" + count).css("visibility", "hidden");
-            console.log(count);
         }
     });
 
