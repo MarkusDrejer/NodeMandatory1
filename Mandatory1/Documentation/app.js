@@ -5,8 +5,18 @@ const app = express();
 
 app.use(express.static(__dirname + "/public"));
 
+
+
 app.get("/", (req, res) => {
-    return res.redirect("/theory")
+    const htmlFolder = __dirname + '/public/html';
+    const htmlFiles = [];
+    fs.readdirSync(htmlFolder).forEach(file => {
+        htmlFiles.push(file);
+      });
+    let temp = htmlFiles[Math.floor(Math.random() * htmlFiles.length)];
+    let page = temp.substring(0, temp.indexOf("."));
+    
+    return res.redirect("/" + page);
 });
 
 app.get("/commands", (req, res) => {
