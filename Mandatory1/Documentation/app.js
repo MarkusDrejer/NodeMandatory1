@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
       });
     let temp = htmlFiles[Math.floor(Math.random() * htmlFiles.length)];
     let page = temp.substring(0, temp.indexOf("."));
-    
+
     return res.redirect("/" + page);
 });
 
@@ -37,7 +37,8 @@ app.get("/imgFiles", (req, res) => {
     fs.readdirSync(imgFolder).forEach(file => {
         imgFiles.push(file);
       });
-      return res.send(imgFiles);
+
+    return res.send(imgFiles);
 });
 
 const server = app.listen(3000, (error) => {

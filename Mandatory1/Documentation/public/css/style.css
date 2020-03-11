@@ -26,6 +26,7 @@
   .columnSticky .example {
     max-width: 88%;
     max-height: auto;
+    margin-top: 2em;
     margin-left: 2.5em;
     margin-bottom: 1em;
   }
@@ -38,7 +39,7 @@
   }
 
   #main h3 {
-    color: skyblue;
+    color: rgb(23, 173, 233);
     font-size: x-large;
     margin-top: -0.2em;
     margin-bottom: 0.4em;
@@ -50,6 +51,11 @@
     width: 90%;
     color: black;
     font-size: 1.2em;
+  }
+
+  #main .note {
+    color: red;
+    margin-top: 1em;
   }
 
   .row a:link, a:visited {
@@ -103,6 +109,7 @@
     background-color: whitesmoke;
     color: black;
     border: none;
+    position: fixed;
   }
   
   .openbtn:hover {
